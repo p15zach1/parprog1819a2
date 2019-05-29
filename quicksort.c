@@ -252,6 +252,7 @@ int main(){
 
 	pthread_mutex_destroy(&mutex);
 	pthread_cond_destroy(&packet_in);
+	pthread_cond_destroy(&packet_completed);
 
 	free(a);
 	return 0;
