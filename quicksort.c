@@ -24,7 +24,7 @@ struct thread_params{
 
 struct thread_params queue[N];
 
-struct thread_params completed[S/LIMIT];
+struct thread_params completed[N];
 
 void inssort(double *a, int s){
 	double temp;
@@ -194,8 +194,6 @@ int main(){
 	for(int i=0; i<N; i++){
 		queue[i].a = NULL;
 		queue[i].s = -1;
-	}
-	for(int i=0; i<S/LIMIT; i++){
 		completed[i].a = NULL;
 		completed[i].s = -1;
 	}
